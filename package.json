@@ -3,19 +3,51 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "ag-grid-community": "^25.3.0",
+    "ag-grid-enterprise": "^25.3.0",
+    "ag-grid-react": "^25.3.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "dotenv-webpack": "^2.0.0",
+    "html-webpack-plugin": "^4.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "^1.1.5",
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@webpack-cli/serve": "^1.5.1",
+    "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "crypto-browserify": "^3.12.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.5.2",
+    "image-webpack-loader": "^6.0.0",
+    "react-hot-loader": "^4.5.3",
+    "stream-browserify": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --hot"
   },
   "eslintConfig": {
     "extends": [

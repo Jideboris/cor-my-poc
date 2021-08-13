@@ -1,0 +1,209 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  padding: 0px 50px;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  min-height: 800px;
+}
+
+html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  padding: 1rem;
+  /* overflow: auto; */
+}
+
+.btn-alternate {
+  color: #fff;
+  background-color: #2b3024;
+  border-color: #2b3024
+}
+
+.btn-lg, .btn-group-lg>.btn {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  line-height: 0.5rem;
+  border-radius: .3rem
+}
+
+.mb-2, .my-2 {
+  margin-bottom: .5rem !important
+}
+
+.mr-2, .mx-2 {
+  margin-right: .5rem !important
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 12px;
+}
+
+.ag-cell-value, .ag-group-value {
+  font-size: 12px!important;
+}
+
+.ag-theme-alpine .ag-row-selected {
+  background-color: rgba(5, 5, 75, 0.05)!important;
+  border: 0.05rem solid #05054B!important;
+}
+
+.ag-row-hover {
+  background-color: rgba(5, 5, 75, 0.05)!important;
+  border: 0.05rem solid #05054B!important;
+}
+
+.ag-body-viewport-wrapper .ag-layout-normal {
+  overflow-x: scroll;
+}
+
+.ag-root-wrapper .ag-layout-normal .ag-ltr {
+  padding: 0 50px!important;
+}
+
+.ag-theme-alpine {
+  /* padding: 20px 0px!important; */
+}
+
+/* .ag-theme-alpine .ag-root-wrapper-body .ag-checkbox-input-wrapper::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  content: '\f00d';
+  color: #7c7979;
+  width: 20px;
+  height: 20px;
+}
+
+.ag-theme-alpine .ag-root-wrapper-body .ag-checkbox-input-wrapper.ag-checked::after {
+  font-weight: bold;
+  font-family: 'Font Awesome 5 Free';
+  content: '\2713';
+  color: #05054b!important;
+  width: 20px;
+  height: 20px;
+} */
+
+.ag-theme-alpine .ag-root-wrapper-body .ag-checkbox-input-wrapper.ag-indeterminate::after {
+  content: '\f068';
+  font-weight: bold;
+  font-family: 'Font Awesome 5 Free';
+  color: gray;
+}
+
+.ag-theme-alpine .ag-checkbox-input-wrapper.ag-checked::after {
+  color: #05054B !important;
+}
+
+.links {
+  color: "#05054B";
+  cursor: "pointer";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.links2 {
+  color: "#05054B";
+  cursor: "pointer";
+  font-weight: bold;
+  margin-right: 100px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.centre {
+  margin: auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 280px;
+  margin-bottom: 300px;
+}
+
+.centre5 {
+  margin: auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 500px;
+  margin-bottom: 300px;
+}
+
+.centre2 {
+  margin: auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-decoration: underline;
+  margin-bottom: 150px;
+}
+
+.centre3-logo {
+  margin: auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+.centre3 {
+  margin: auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#root {
+  background-color: #f2f2f2;
+}
+
+.ag-root-wrapper.ag-layout-normal {
+  background-color: #f2f2f2;
+}
+
+.ag-theme-alpine .ag-ltr .ag-has-focus .ag-cell-focus:not(.ag-cell-range-selected), .ag-theme-alpine .ag-ltr .ag-context-menu-open .ag-cell-focus:not(.ag-cell-range-selected), .ag-theme-alpine .ag-ltr .ag-has-focus .ag-full-width-row.ag-row-focus .ag-cell-wrapper.ag-row-group, .ag-theme-alpine .ag-ltr .ag-cell-range-single-cell, .ag-theme-alpine .ag-ltr .ag-cell-range-single-cell.ag-cell-range-handle, .ag-theme-alpine .ag-rtl .ag-has-focus .ag-cell-focus:not(.ag-cell-range-selected), .ag-theme-alpine .ag-rtl .ag-context-menu-open .ag-cell-focus:not(.ag-cell-range-selected), .ag-theme-alpine .ag-rtl .ag-has-focus .ag-full-width-row.ag-row-focus .ag-cell-wrapper.ag-row-group, .ag-theme-alpine .ag-rtl .ag-cell-range-single-cell, .ag-theme-alpine .ag-rtl .ag-cell-range-single-cell.ag-cell-range-handle ::after {
+  border: none !important;
+  border-color: unset!important;
+}
+
+.wrapper {
+  -o-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.btn-container {
+  align-items: center;
+  display: flex;
+  padding-top: 25px;
+}
+
+.btn-right {
+  justify-content: flex-end;
+  flex: 1;
+  display: flex;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.PrivateTabIndicator-colorSecondary-6 {
+  background-color: #05054B !important;
+}
